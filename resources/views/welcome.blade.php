@@ -19,13 +19,9 @@
 
     @include('partials.header')
 
-    <main>
+    @include('partials.main')
 
-    </main>
-
-    <footer>
-
-    </footer>
+    @include('partials.footer')
 
 </body>
 
