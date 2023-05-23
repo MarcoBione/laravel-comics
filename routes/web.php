@@ -14,5 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+
+    //recupero dati dal db
+    $data =[
+        'products'=>config('db')
+    ];
+    return view('welcome',$data);
 });
